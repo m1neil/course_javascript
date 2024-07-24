@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
 	const output = document.querySelector('.page__result')
 
 	if (a && b && c) {
-		// 5, 8, 15
 		const s1 = a + 12 + b
 		const s2 = Math.sqrt((a + b) / (2 * a))
 		const s3 = Math.cbrt((a + b) * c)

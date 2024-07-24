@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
 	const quantity = +prompt('Кількість товару');
 	const price = +prompt('Вартість одиниці товару')
 	const RATE_PDV = 5;
+
 	if (quantity && price && quantity > 0 && price > 0) {
 		const totalPrice = quantity * price;
 		const pdv = (totalPrice * RATE_PDV) / 100;
