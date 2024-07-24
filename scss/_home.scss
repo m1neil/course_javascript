@@ -13,7 +13,7 @@
 	}
 	&__text {
 		&:not(:last-child) {
-			margin-bottom: toRem(10);
+			margin-bottom: toRem(15);
 		}
 	}
 	&__back {
@@ -58,7 +58,9 @@
 	// .list-page__item
 	&__item {
 		&:not(:last-child) {
-			margin-bottom: toRem(10);
+			padding-block-end: toRem(15);
+			border-bottom: toRem(2) solid gray;
+			margin-block-end: toRem(15);
 		}
 		&::before {
 			counter-increment: number;
@@ -101,4 +103,25 @@
 .info {
 	color: red;
 	font-size: toRem(25);
+}
+
+.table {
+	border-collapse: collapse;
+	font-size: toRem(16);
+	letter-spacing: toRem(1);
+	th {
+		padding: toRem(12) toRem(10);
+		font-weight: 700;
+		border: toRem(2) solid #fff;
+	}
+	&__thead {
+		background-color: gray;
+	}
+	&__tbody {
+		th,
+		td {
+			border: toRem(2) solid gray;
+			padding: toRem(12) toRem(10);
+		}
+	}
 }
